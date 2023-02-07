@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import Navapp from "./components/navbardir/Navapp";
+import Bars from "./components/Bars.js";
+import Lines from "./components/Lines";
+import Pies from "./components/pies";
+
+import "./App.css";
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navapp />
+      <Bars />
+      <Lines />
+      <Pies />
+
     </div>
   );
 }
+
 
 export default App;
